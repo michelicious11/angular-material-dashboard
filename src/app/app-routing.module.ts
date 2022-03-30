@@ -11,30 +11,35 @@ import { RegisterComponent } from './modules/register/register.component';
 
 
 const routes: Routes = [{
-  path: '',
-  component: DefaultComponent,
-  children: [{
-    path: 'deliveries',
-    component: DeliveryComponent
-  }, {
-    path: 'inventory',
-    component: InventoryComponent
-  }, {
-    path: 'home',
+  path: 'home',
+  component: HomeComponent,
+    children: [{
+      path: 'login',
+      component: LoginComponent
+    }, {
+      path: 'register',
+      component: RegisterComponent
+    }]
+  },{
+    path: '',
     component: HomeComponent
   }, {
-    path: 'orders',
-    component: OrderComponent
-  }, {
-    path: 'users',
-    component: UserListComponent
-  }, {
-    path: 'login',
-    component: LoginComponent
-  }, {
-    path: 'register',
-    component: RegisterComponent
-  }]
+    path: '', redirectTo: 'home', pathMatch:'full'
+  },{
+  path: 'default',
+  component: DefaultComponent,
+    children: [{
+      path: 'deliveries',
+      component: DeliveryComponent
+    }, {
+      path: 'inventory',
+      component: InventoryComponent
+    }, {
+      path: 'orders',
+      component: OrderComponent
+    }, {
+      path: 'users',
+      component: UserListComponent }] 
 }];
 
 @NgModule({

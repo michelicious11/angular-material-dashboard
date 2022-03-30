@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DefaultComponent } from './default.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { MatSidenavModule, MatDividerModule, MatCardModule, MatPaginatorModule, MatTableModule } from '@angular/material';
+import { MatSidenavModule, MatDividerModule, MatCardModule, MatPaginatorModule, MatTableModule, MatFormFieldModule, MatIconModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DeliveryComponent } from '../../modules/delivery/delivery.component';
 import { InventoryComponent } from '../../modules/inventory/inventory.component';
@@ -12,6 +12,7 @@ import { OrderComponent } from '../../modules/order/order.component';
 import { UserListComponent } from '../../modules/user-list/user-list.component';
 import { LoginComponent } from '../../modules/login/login.component';
 import { RegisterComponent } from '../../modules/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,7 +35,13 @@ import { RegisterComponent } from '../../modules/register/register.component';
     FlexLayoutModule,
     MatCardModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatCardModule,
+    FormsModule,
+    MatCardModule,
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [
 
