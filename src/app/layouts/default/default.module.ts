@@ -1,19 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DefaultComponent } from './default.component';
-import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
-import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule, MatDividerModule, MatCardModule, MatPaginatorModule, MatTableModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { DashboardService } from 'src/app/modules/dashboard.service';
+import { DeliveryComponent } from '../../modules/delivery/delivery.component';
+import { InventoryComponent } from '../../modules/inventory/inventory.component';
+import { HomeComponent } from '../../modules/home/home.component';
+import { OrderComponent } from '../../modules/order/order.component';
+import { UserListComponent } from '../../modules/user-list/user-list.component';
+import { LoginComponent } from '../../modules/login/login.component';
+import { RegisterComponent } from '../../modules/register/register.component';
+
 
 @NgModule({
   declarations: [
     DefaultComponent,
-    DashboardComponent,
-    PostsComponent
+    DeliveryComponent,
+    InventoryComponent,
+    HomeComponent,
+    OrderComponent,
+    UserListComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +37,7 @@ import { DashboardService } from 'src/app/modules/dashboard.service';
     MatTableModule
   ],
   providers: [
-    DashboardService
+
   ]
 })
 export class DefaultModule { }

@@ -11,22 +11,25 @@
 
     <h2 matSubheader>Pages</h2>
 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
-
-    <mat-divider></mat-divider>
-
-    <h2 matSubheader>Tools</h2>
-
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
-        <mat-icon>import_contacts</mat-icon>
-        Contacts
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>home</mat-icon> Home
     </a>
-
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
-        <mat-icon>contact_phone</mat-icon>
-        Leads
+   
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/orders">
+        <mat-icon>shopping_cart</mat-icon> Orders
+    </a>
+    
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/deliveries">
+        <mat-icon>receipt</mat-icon> Deliveries
+    </a>
+    
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/inventory">
+        <mat-icon>store</mat-icon> Inventory
+    </a>
+    
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/users">
+        <mat-icon>person</mat-icon>
+        Users
     </a>
 
 </mat-nav-list>
